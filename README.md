@@ -14,7 +14,7 @@ Os arquivos deste projeto estão organizados nos seguintes arquivos e pastas:
 
 **antlr.jar**: Ferramenta ANTLR versão 4 baixada do site antlr.org.
 
-**TaskScript.g4**: Gramática desenvolvida.
+**ReminderScript.g4**: Gramática desenvolvida.
 
 **test.task**: Exemplo da DSL.
 
@@ -23,7 +23,7 @@ Os arquivos deste projeto estão organizados nos seguintes arquivos e pastas:
 ## 1. Compilar a descrição da linguagem fonte:
 
 ```
-java -jar antlr.jar -o src-gen -visitor TaskScript.g4
+java -jar antlr.jar -o src-gen -visitor ReminderScript.g4
 ```
 
 ## 2. Compilar programas em Java:
@@ -34,5 +34,5 @@ javac -cp antlr.jar:classes -d classes src/*.java src-gen/*.java
 ## 3. Executar o programa:
 
 ```
-java -cp antlr.jar:classes MainTaskScript test.task
+java -cp antlr.jar:classes MainReminderScript test.task
 ```
