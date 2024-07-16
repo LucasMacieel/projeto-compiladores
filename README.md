@@ -16,7 +16,7 @@ Os arquivos deste projeto estão organizados nos seguintes arquivos e pastas:
 
 **ReminderScript.g4**: Gramática desenvolvida.
 
-**test.task**: Exemplo da DSL.
+**teste.rmdr**: Exemplo da DSL.
 
 # Comandos para Compilar
 
@@ -34,5 +34,5 @@ javac -cp antlr.jar:classes -d classes src/*.java src-gen/*.java
 ## 3. Executar o programa:
 
 ```
-java -cp antlr.jar:classes MainReminderScript test.task
+java -cp antlr.jar:classes MainReminderScript teste.rmdr
 ```
