@@ -1,0 +1,5 @@
+lembrete "Compras" {
+    descricao: "Comprar leite, ovos e pão na loja.",
+    vencimento: 15/07/2024 16:15,
+    prioridade: alta
+}
