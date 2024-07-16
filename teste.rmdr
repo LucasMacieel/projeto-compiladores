@@ -1,5 +1,5 @@
 lembrete "Compras" {
     mensagem: "Comprar leite, ovos e pão na loja.",
-    tempo: 16/07/2024 14:58,
-    repetir: único
+    dataRepeticao: 16/07/2024 19:15,
+    repeticao: diária
 }

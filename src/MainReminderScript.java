@@ -49,7 +49,7 @@ public class MainReminderScript {
             }
 
             private boolean repeticaoValida(String opcaoRepeticao) {
-                return opcaoRepeticao.equalsIgnoreCase("único") || opcaoRepeticao.equalsIgnoreCase("diário")
+                return opcaoRepeticao.equalsIgnoreCase("única") || opcaoRepeticao.equalsIgnoreCase("diária")
                         || opcaoRepeticao.equalsIgnoreCase("semanal")
                         || opcaoRepeticao.equalsIgnoreCase("mensal");
             }
@@ -73,12 +73,12 @@ public class MainReminderScript {
             public void run() {
                 // Exibe a mensagem do lembrete
                 System.out.println(lembrete + ": " + mensagem);
-                if (opcaoRepeticao.equalsIgnoreCase("único")) {
+                if (opcaoRepeticao.equalsIgnoreCase("única")) {
                     // Encerra o scheduler se a repetição for única
                     scheduler.shutdown();
                 } else {
                     // Calcula o próximo intervalo para a repetição
-                    long delay = obterProximoIntervalo(opcaoRepeticao, dataRepeticao);
+                    long delay = 5000;
                     scheduler.schedule(this, delay, TimeUnit.MILLISECONDS);
                     dataRepeticao.setTime(System.currentTimeMillis() + delay); // Atualiza a dataRepeticao
                 }
@@ -91,10 +91,10 @@ public class MainReminderScript {
         scheduler.schedule(task, initialDelay, TimeUnit.MILLISECONDS);
 
         switch (opcaoRepeticao.toLowerCase()) {
-            case "único":
+            case "única":
                 System.out.println("Agendando lembrete único para: " + dataRepeticao);
                 break;
-            case "diário":
+            case "diária":
                 System.out.println("Agendando lembrete diário a partir de: " + dataRepeticao);
                 break;
             case "semanal":
@@ -111,7 +111,7 @@ public class MainReminderScript {
         Calendar calendar = Calendar.getInstance();
         calendar.setTime(dataRepeticao);
         switch (opcaoRepeticao.toLowerCase()) {
-            case "diário":
+            case "diária":
                 calendar.add(Calendar.DAY_OF_MONTH, 1);
                 break;
             case "semanal":

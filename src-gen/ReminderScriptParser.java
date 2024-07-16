@@ -29,8 +29,8 @@ public class ReminderScriptParser extends Parser {
 
 	private static String[] makeLiteralNames() {
 		return new String[] {
-			null, "'lembrete'", "'{'", "'mensagem'", "':'", "','", "'tempo'", "'repetir'", 
-			"'}'"
+			null, "'lembrete'", "'{'", "'mensagem'", "':'", "','", "'dataRepeticao'", 
+			"'repeticao'", "'}'"
 		};
 	}
 	private static final String[] _LITERAL_NAMES = makeLiteralNames();

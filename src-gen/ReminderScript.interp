@@ -5,8 +5,8 @@ null
 'mensagem'
 ':'
 ','
-'tempo'
-'repetir'
+'dataRepeticao'
+'repeticao'
 '}'
 null
 null

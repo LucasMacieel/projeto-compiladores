@@ -36,3 +36,15 @@ javac -cp antlr.jar:classes -d classes src/*.java src-gen/*.java
 ```
 java -cp antlr.jar:classes MainReminderScript teste.rmdr
 ```
+
+# Formato da DSL (Domain-Specific Language)
+
+A DSL usada neste projeto permite a definição de lembretes com uma sintaxe específica. Cada lembrete inclui um nome, uma mensagem, uma data/hora de repetição e uma opção de repetição. A seguir está a estrutura esperada para os arquivos .rmdr:
+
+```
+lembrete "<nome_do_lembrete>" {
+    mensagem: "<mensagem_do_lembrete>"
+    dataRepeticao: "<dd/MM/yyyy HH:mm>"
+    repeticao: <única, diária, semanal, mensal>
+}
+```
