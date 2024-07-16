@@ -78,7 +78,7 @@ public class MainReminderScript {
                     scheduler.shutdown();
                 } else {
                     // Calcula o próximo intervalo para a repetição
-                    long delay = 5000;
+                    long delay = obterProximoIntervalo(opcaoRepeticao, dataRepeticao);
                     scheduler.schedule(this, delay, TimeUnit.MILLISECONDS);
                     dataRepeticao.setTime(System.currentTimeMillis() + delay); // Atualiza a dataRepeticao
                 }
