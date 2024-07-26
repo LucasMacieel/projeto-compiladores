@@ -39,7 +39,7 @@ javac -cp antlr.jar:classes -d classes src/*.java src-gen/*.java
 ## 3. Executar o programa:
 
 ```
-java -cp antlr.jar:classes MainReminderScript teste.rmdr
+java -cp antlr.jar:classes MainReminderScript testeUnico.rmdr
 ```
 
 # Formato da DSL (Domain-Specific Language)
