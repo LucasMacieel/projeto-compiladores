@@ -2,6 +2,11 @@
 Códigos Desenvolvidos pela disciplina Compiladores
 no semestre 2024.1
 
+# Grupo
+- Lucas Maciel Sousa
+- Luiz Felipe Espindola
+- Hugo Andrade
+
 # Estrutura de Arquivos:
 
 Os arquivos deste projeto estão organizados nos seguintes arquivos e pastas:
