@@ -1,0 +1,5 @@
+lembrete "Prova" {
+    mensagem: "Prova final de Compiladores amanhã, se você perder só saberá um mês depois",
+    dataRepeticao: 01/08/2024 12:00,
+    repeticao: mensal
+}
