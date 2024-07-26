@@ -1,0 +1,5 @@
+lembrete "Aniversário de Hugo" {
+    mensagem: "Hoje é aniversário de Hugo! Parabéns para ele!",
+    dataRepeticao: 16/07/1999 09:00,
+    repeticao: anual
+}
