@@ -21,7 +21,7 @@ Os arquivos deste projeto estão organizados nos seguintes arquivos e pastas:
 
 **ReminderScript.g4**: Gramática desenvolvida.
 
-**teste.rmdr**: Exemplo da DSL.
+**testeUnico.rmdr**: Exemplo da DSL.
 
 # Comandos para Compilar
 
@@ -48,8 +48,8 @@ A DSL usada neste projeto permite a definição de lembretes com uma sintaxe esp
 
 ```
 lembrete "<nome_do_lembrete>" {
-    mensagem: "<mensagem_do_lembrete>"
-    dataRepeticao: "<dd/MM/yyyy HH:mm>"
+    mensagem: "<mensagem_do_lembrete>",
+    dataRepeticao: <dd/MM/yyyy HH:mm>,
     repeticao: <única, diária, semanal, mensal>
 }
 ```
